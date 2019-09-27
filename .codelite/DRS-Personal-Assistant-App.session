@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="E:\Programming\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App.workspace">
+<Session Name="C:\Users\kmead\OneDrive\Documents\GitHub\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="E:\Programming\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App.workspace" Name="m_workspaceName"/>
+  <wxString Value="C:\Users\kmead\OneDrive\Documents\GitHub\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="E:\Programming\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App\main.cpp" Name="FileName"/>
+      <wxString Value="C:\Users\kmead\OneDrive\Documents\GitHub\DRS-Personal-Assistant-App\DRS-Personal-Assistant-App\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="32" Name="CurrentLine"/>
+      <int Value="41" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

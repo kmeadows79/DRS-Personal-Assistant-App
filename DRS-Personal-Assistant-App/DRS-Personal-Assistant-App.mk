@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=DRS-Personal-Assistant-App
 ConfigurationName      :=Debug
-WorkspacePath          :=E:/Programming/DRS-Personal-Assistant-App
-ProjectPath            :=E:/Programming/DRS-Personal-Assistant-App/DRS-Personal-Assistant-App
+WorkspacePath          :=C:/Users/kmead/OneDrive/Documents/GitHub/DRS-Personal-Assistant-App
+ProjectPath            :=C:/Users/kmead/OneDrive/Documents/GitHub/DRS-Personal-Assistant-App/DRS-Personal-Assistant-App
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Katie
-Date                   :=24/09/2019
+User                   :=kmead
+Date                   :=26/09/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/Programming/DRS-Personal-Assistant-App/DRS-Personal-Assistant-App/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/kmead/OneDrive/Documents/GitHub/DRS-Personal-Assistant-App/DRS-Personal-Assistant-App/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 

@@ -3,10 +3,10 @@
 using namespace std;
 
 void display_main_menu();
-char get_user_selection();
+string get_user_selection();
 
 int main() {
-    char user_selection {};
+    string user_selection {};
     display_main_menu();
     user_selection = get_user_selection();
     cout << user_selection << endl;
@@ -18,22 +18,30 @@ void display_main_menu() {
         << "|     DRS Personal Assistant Application     |\n"
         << "----------------------------------------------\n"
         << "\n"
-        << "     C  Enter clocking\n"
-        << "     V  View calendar\n"
-        << "     P  Personal Assistant preferences\n"
-        << "     I  Enter/view Consumer information\n"
+        << "     1  Enter clocking\n"
+        << "     2  View calendar\n"
+        << "     3  Personal Assistant preferences\n"
+        << "     4  Enter/view Consumer information\n"
         << "     Q  Quit\n"
         << "\n"
         << "Please make a selection from the menu above: ";
 }
 
-char get_user_selection() {
-    char user_selection {};
-    cin >> user_selection;
-    if (user_selection == '1' || user_selection == '2' || user_selection == '3' || user_selection == '4' || user_selection == 'Q') {
-        
-    } else {
-        user_selection = '~';
-    }
+string get_user_selection() {
+    string user_selection {};
+    bool valid_selection {false};
+    do {
+        cin >> user_selection;
+        if (user_selection > "0" && user_selection < "5") {
+            valid_selection = true;
+        } else if (user_selection == "Q" || user_selection == "q") {
+            user_selection = "Q";
+            valid_selection = true;
+        } else {
+            user_selection = "";
+            cout << "\nInvalid selection.\n";
+            display_main_menu();
+        }
+    } while (!valid_selection);
     return user_selection;
 }
